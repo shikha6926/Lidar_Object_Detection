@@ -22,7 +22,7 @@ public:
 
         timer_ = this->create_wall_timer(std::chrono::seconds(2), std::bind(&LidarNode::processNextPCD, this));
 
-        std::string pcd_directory = "/home/shikha/Workspace/Sensor_Fusion_Course/repos/SFND_Lidar_Obstacle_Detection/src/sensors/data/pcd/data_1/";
+        std::string pcd_directory = "../data/pcd/data_1/";
         for (const auto &entry : fs::directory_iterator(pcd_directory)) {
             if (entry.path().extension() == ".pcd") {
                 pcd_files_.push_back(entry.path().string());
