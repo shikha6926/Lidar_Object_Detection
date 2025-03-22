@@ -7,6 +7,11 @@ This project processes LiDAR point cloud data using the **Point Cloud Library (P
 
 The method enables efficient object recognition and spatial analysis, enhancing navigation and environment mapping. The project is developed in **C++** within a **ROS 2 (Jazzy) environment** and visualized using **RViz**.
 
+## Results
+Detection and classification of objects in a 3D environment using **RANSAC segmentation** and **KD-Tree clustering** is available below:
+
+![Detection Result](videos/output_lidar_video.gif)
+
 ## Repository Structure
 ```
 Object-Detection-Using-LiDAR/
@@ -46,13 +51,9 @@ Run the ROS 2 node to process LiDAR data:
 ros2 run lidar_object_detection lidar_detection_node
 ```
 
-## Visualization
-Use **RViz** to visualize the detected objects and clustering results. Ensure RViz is installed and configured correctly to subscribe to the necessary LiDAR topics.
+## Acknowledgements
 
-## Results
-A GIF demonstrating the detection and classification of objects in a 3D environment using **RANSAC segmentation** and **KD-Tree clustering** is available below:
-
-![Detection Result](videos/output_lidar_video.gif)
+Special thanks to **Udacity** for providing the dataset to implement this project.
 
 
 
